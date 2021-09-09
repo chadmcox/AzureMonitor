@@ -1,0 +1,218 @@
+{
+    "location": "eastus",
+    "properties": {
+      "dataSources": {
+        "performanceCounters": [
+          {
+            "name": "CoreCounters",
+            "streams": [
+              "Microsoft-Perf"
+            ],
+            "scheduledTransferPeriod": "PT1M",
+            "samplingFrequencyInSeconds": 15,
+            "counterSpecifiers": [
+              "\\Database(lsass)\\Version Buckets Allocated",
+              "\\Database(lsass)\\Sessions In Use",
+              "\\DirectoryServices(*)\\ATQ Outstanding Queued Requests",
+              "\\DirectoryServices(*)\\ATQ Threads LDAP",
+              "\\DirectoryServices(*)\\ATQ Threads Other",
+              "\\DirectoryServices(*)\\ATQ Threads Total",
+              "\\DirectoryServices(*)\\DS Threads in Use",
+              "\\DirectoryServices(*)\\LDAP Client Sessions",
+              "\\DirectoryServices(*)\\LDAP Searches/sec",
+              "\\DirectoryServices(*)\\Replication Operations Pending",
+              "\\DirectoryServices(*)\\Outstanding Queue Delays",
+              "\\DirectoryServices(*)\\DSNotifyQueueSize",
+              "\\Memory\\Available MBytes",
+              "\\Memory\\Pages/sec",
+              "\\Memory\\Pool Nonpaged Bytes",
+              "\\Memory\\Pool Paged Bytes",
+              "\\Netlogon(_Total)\\*",
+              "\\PhysicalDisk(_total)\\Current Disk Queue Length",
+              "\\PhysicalDisk(_total)\\Avg. Disk sec/Read",
+              "\\PhysicalDisk(_total)\\Avg. Disk sec/Write",
+              "\\PhysicalDisk(_total)\\Disk Transfers/sec",
+              "\\Processor(_Total)\\% Processor Time",
+              "\\Processor(_Total)\\% User Time",
+              "\\Processor(_Total)\\% Privileged Time",
+              "\\Security System-Wide Statistics\\Kerberos Authentications",
+              "\\Security System-Wide Statistics\\NTLM Authentications",
+              "\\TCPv4\\Connection Failures",
+              "\\TCPv4\\Connections Established",
+              "\\Netlogon(*)\\*",
+              "\\Event Tracing for Windows Session(Eventlog-Security)\\Events Logged per sec",
+              "\\VM Processor(*)\\*",
+              "\\VM Memory(*)\\*",
+              "\\Process(lsass)\\% Processor Time"
+            ]
+          },
+          {
+            "name": "ExtraCounters",
+            "streams": [
+              "Microsoft-Perf"
+            ],
+            "scheduledTransferPeriod": "PT5M",
+            "samplingFrequencyInSeconds": 60,
+            "counterSpecifiers": [
+              "\\directoryServices(*)\\AB Browses/sec",
+              "\\directoryServices(*)\\AB Client Sessions",
+              "\\directoryServices(*)\\LDAP Active Threads",
+              "\\directoryServices(*)\\LDAP Writes/sec",
+              "\\directoryServices(*)\\LDAP UDP operations/sec",
+              "\\directoryServices(*)\\DS Search sub-operations/sec",
+              "\\directoryServices(*)\\DS Directory Writes/sec",
+              "\\directoryServices(*)\\DS % Searches Other",
+              "\\directoryServices(*)\\DS % Searches from LSA",
+              "\\directoryServices(*)\\DS Directory Searches/sec",
+              "\\directoryServices(*)\\DS Directory Reads/sec",
+              "\\directoryServices(*)\\LDAP Successful Binds/sec",
+              "\\directoryServices(*)\\LDAP Bind Time",
+              "\\directoryServices(*)\\SAM Membership Changes/sec",
+              "\\directoryServices(*)\\SAM Display Information Queries/sec",
+              "\\directoryServices(*)\\SAM Enumerations/sec",
+              "\\directoryServices(*)\\SAM Transitive Membership Evaluations/sec",
+              "\\directoryServices(*)\\SAM Non-Transitive Membership Evaluations/sec",
+              "\\directoryServices(*)\\SAM Domain Local Group Membership Evaluations/sec",
+              "\\directoryServices(*)\\SAM Universal Group Membership Evaluations/sec",
+              "\\directoryServices(*)\\SAM Global Group Membership Evaluations/sec",
+              "\\directoryServices(*)\\SAM GC Evaluations/sec",
+              "\\directoryServices(*)\\DS Client Binds/sec",
+              "\\directoryServices(*)\\AB ANR/sec",
+              "\\directoryServices(*)\\AB Property Reads/sec",
+              "\\directoryServices(*)\\AB Searches/sec",
+              "\\directoryServices(*)\\AB Matches/sec",
+              "\\directoryServices(*)\\AB Proxy Lookups/sec",
+              "\\directoryServices(*)\\LDAP New Connections/sec",
+              "\\directoryServices(*)\\LDAP New SSL Connections/sec",
+              "\\directoryServices(*)\\SAM Account Group Evaluation Latency",
+              "\\directoryServices(*)\\SAM Resource Group Evaluation Latency",
+              "\\directoryServices(*)\\ATQ Outstanding Queued Requests",
+              "\\directoryServices(*)\\ATQ Request Latency",
+              "\\directoryServices(*)\\ATQ Estimated Queue Delay",
+              "\\directoryServices(*)\\Tombstones Garbage Collected/sec",
+              "\\directoryServices(*)\\Tombstones Visited/sec",
+              "\\directoryServices(*)\\NTLM Binds/sec",
+              "\\directoryServices(*)\\Negotiated Binds/sec",
+              "\\directoryServices(*)\\Digest Binds/sec",
+              "\\directoryServices(*)\\Simple Binds/sec",
+              "\\directoryServices(*)\\External Binds/sec",
+              "\\directoryServices(*)\\Fast Binds/sec",
+              "\\directoryServices(*)\\Base searches/sec",
+              "\\directoryServices(*)\\Subtree searches/sec",
+              "\\directoryServices(*)\\Database adds/sec",
+              "\\directoryServices(*)\\Database modifys/sec",
+              "\\directoryServices(*)\\Database deletes/sec",
+              "\\database(Database(lsass))\\Database Cache Misses/sec",
+              "\\database(Database(lsass))\\Database Cache % Hit",
+              "\\database(Database(lsass))\\Database Cache Size (MB)",
+              "\\DNS\\Dynamic Update Received/sec",
+              "\\DNS\\Recursive Queries/sec",
+              "\\DNS\\Recursive Query Failure/sec",
+              "\\DNS\\Secure Update Received/sec",
+              "\\DNS\\TCP Query Received/sec",
+              "\\DNS\\TCP Response Sent/sec",
+              "\\DNS\\Total Query Received/sec",
+              "\\DNS\\Total Response Sent/sec",
+              "\\DNS\\UDP Query Received/sec",
+              "\\DNS\\UDP Response Sent/sec",
+              "\\Memory\\% Committed Bytes In Use",
+              "\\Memory\\Cache Bytes",
+              "\\Memory\\Commit Limit",
+              "\\Memory\\Committed Bytes",
+              "\\Memory\\Demand Zero Faults/sec",
+              "\\Memory\\Free & Zero Page List Bytes",
+              "\\Memory\\Free System Page Table Entries",
+              "\\Memory\\Modified Page List Bytes",
+              "\\Memory\\Pages Input/sec",
+              "\\Memory\\Pages Output/sec",
+              "\\Memory\\System Cache Resident Bytes",
+              "\\Memory\\Transition Pages RePurposed/sec",
+              "\\Network Interface(*)\\Bytes Total/sec",
+              "\\Network Interface(*)\\Current Bandwidth",
+              "\\Network Interface(*)\\Bytes Received/Sec",
+              "\\Network Interface(*)\\Bytes Sent/sec",
+              "\\Network Interface(*)\\Offloaded Connections",
+              "\\Network Interface(*)\\Output Queue Length",
+              "\\Network Interface(*)\\TCP Active RSC Connections",
+              "\\Network Interface(*)\\TCP RSC Average Packet Size",
+              "\\Paging File(*)\\% Usage",
+              "\\PhysicalDisk(*)\\% Idle Time",
+              "\\PhysicalDisk(*)\\Split IO/Sec",
+              "\\Processor Information(*)\\% of Maximum Frequency",
+              "\\Processor Information(*)\\Parking Status",
+              "\\Redirector\\Packets/sec",
+              "\\Redirector\\Server Sessions",
+              "\\Redirector\\Server Disconnects",
+              "\\Redirector\\Server Reconnects",
+              "\\Redirector\\Server Sessions Hung",
+              "\\Server\\Logon Total",
+              "\\Server\\Pool Nonpaged Failures",
+              "\\Server\\Pool Paged Failures",
+              "\\Server\\Server Sessions",
+              "\\Server Work Queues(*)\\Available Work Items",
+              "\\Server Work Queues(*)\\Bytes Transferred/sec",
+              "\\Server Work Queues(*)\\Current Clients",
+              "\\Server Work Queues(*)\\Queue Length",
+              "\\System\\Context Switches/sec",
+              "\\System\\Processor Queue Length",
+              "\\System\\System Calls/sec",
+              "\\TCPv4\\Connections Active",
+              "\\TCPv4\\Connection Reset",
+              "\\TCPv6\\Connections Active",
+              "\\TCPv6\\Connections Established",
+              "\\TCPv6\\Connection Failures",
+              "\\TCPv6\\Connection Reset",
+            ]
+          }
+        ],
+        "windowsEventLogs": [
+          {
+            "name": "SecurityEvents",
+            "streams": [
+              "Microsoft-Event"
+            ],
+            "scheduledTransferPeriod": "PT1M",
+            "xPathQueries": [
+              "Security!*"
+            ]
+          },
+          {
+            "name": "AppEvents",
+            "streams": [
+              "Microsoft-Event"
+            ],
+            "scheduledTransferPeriod": "PT5M",
+            "xPathQueries": [
+              "System!*[System[(Level = 1 or Level = 2 or Level = 3)]]",
+              "Application!*[System[(Level = 1 or Level = 2 or Level = 3)]]",
+              "Directory Service!*[System[(Level = 1 or Level = 2 or Level = 3)]]",
+              "DNS Server!*[System[(Level = 1 or Level = 2 or Level = 3)]]",
+              "DFS Replication!*[System[(Level = 1 or Level = 2 or Level = 3)]]",
+              "Active Directory Web Services!*[System[(Level = 1 or Level = 2 or Level = 3)]]",
+              "Microsoft-AzureADPasswordProtection-DCAgent/Admin!*[System[(Level = 1 or Level = 2 or Level = 3)]]"
+            ]
+          }
+        ]
+    },
+      "destinations": {
+        "logAnalytics": [
+          {
+            "workspaceResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/my-resource-group/providers/Microsoft.OperationalInsights/workspaces/my-workspace",
+            "name": "centralWorkspace"
+          }
+        ]
+      },
+      "dataFlows": [
+        {
+          "streams": [
+            "Microsoft-Perf",
+            "Microsoft-Syslog",
+            "Microsoft-Event"
+          ],
+          "destinations": [
+            "centralWorkspace"
+          ]
+        }
+      ]
+    }
+}  
